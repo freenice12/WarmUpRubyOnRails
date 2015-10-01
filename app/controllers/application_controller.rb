@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 		if !cookies[:user_id].nil?
 			@current_user = User.find(cookies[:user_id])
 		else
-			retirect_to "/user/login"
+			redirect_to "/user/login"
 		end
 	end
 end
