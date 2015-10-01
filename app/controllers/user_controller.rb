@@ -19,4 +19,11 @@ class UserController < ApplicationController
       redirect_to :back
     end
   end
+	
+	def login
+	end
+
+	def login_complete
+		
+	end
 end
