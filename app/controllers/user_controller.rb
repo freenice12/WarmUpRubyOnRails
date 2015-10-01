@@ -38,5 +38,9 @@ class UserController < ApplicationController
 				redirect_to "/wall/posts"
 			end
 		end
+	def logout
+		cookies.delete(:user_id)
+		redirect_to :back	
+	end
 	end
 end
